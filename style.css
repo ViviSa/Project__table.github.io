@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    border-spacing: 0.2em;
+    border: 1px solid #46abe7;
+   // position: absolute;
+   
+}
+.table-full{
+   // position: relative;
+    //height: auto;
+    display: flex;
+   // margin: auto;
+    margin-left: 400px;
+}
+td, th {
+	background: #46abe7;
+	padding: 32px; 
+}
+button{
+    border: none;
+}
+.addRow button,
+.addColumn button,
+.deleteColumn button,
+.deleteRow button{
+    cursor: pointer;
+    transition: .5s;
+    height: 65px;
+    width: 65px;
+}
+.addRow button,
+.addColumn button{
+  background: #f3a600; 
+}
+.addRow button{
+    margin-top: 2px;
+    margin-left: 3px;
+}
+.addColumn button{
+    margin-top: 69px;
+    margin-left: 2px;
+}
+.deleteColumn button,
+.deleteRow button{
+    background: #b40000;
+    visibility: hidden;
+}
+.deleteColumn{
+    height: 64px;
+    margin-bottom: 3px;
+}
+.deleteRow {
+    margin-top: 65px;
+    width: 60px;
+    margin-right: 7px;
+}
+.deleteColumn button:hover,
+.deleteRow button:hover{
+	background: #cb4a47; 
+}
+.addRow button:hover,
+.addColumn button:hover{
+	background: #f6c151; 
+}
